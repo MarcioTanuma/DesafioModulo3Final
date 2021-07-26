@@ -1,2 +1,2 @@
-public class Morador extends Pessoa{
+public class Morador extends Pessoa {
 }

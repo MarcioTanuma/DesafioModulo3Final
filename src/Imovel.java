@@ -49,6 +49,25 @@ public class Imovel {
         this.funcionario = funcionario;
     }
 
+    public void exibirMoradores(){
+        for (Morador morador: moradores) {
+            System.out.println("Nome do morador: "+morador.getNome()+" - cpf: "+morador.getCpf());
+        }
+    }
+
+    public void exibirFuncionario(){
+        System.out.println("Nome do funcionario: "+funcionario.getNome()+" - cpf: "+funcionario.getCpf());
+    }
+
+    public void exibirDadosImovel(){
+        System.out.println("Endereço imovel: "+this.endereco);
+        System.out.println("Valor do aluguel: "+this.valorAluguel);
+        System.out.println("---- Funcionario responsavel ----");
+        this.exibirFuncionario();
+        System.out.println("---- Moradores do imovél ----");
+        this.exibirMoradores();
+    }
+
     @Override
     public String toString() {
         return "Imovel{" +
