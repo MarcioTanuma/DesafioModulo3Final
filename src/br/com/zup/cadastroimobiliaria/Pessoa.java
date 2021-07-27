@@ -1,3 +1,5 @@
+package br.com.zup.cadastroimobiliaria;
+
 public class Pessoa {
     private String nome;
     private String cpf;
@@ -28,7 +30,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "br.com.zup.cadastroimobiliaria.Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 '}';

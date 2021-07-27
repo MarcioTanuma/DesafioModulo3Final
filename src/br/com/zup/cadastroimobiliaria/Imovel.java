@@ -1,3 +1,5 @@
+package br.com.zup.cadastroimobiliaria;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,17 +62,23 @@ public class Imovel {
     }
 
     public void exibirDadosImovel(){
+        System.out.println(" ");
         System.out.println("Endereço imovel: "+this.endereco);
         System.out.println("Valor do aluguel: "+this.valorAluguel);
+        System.out.println(" ");
         System.out.println("---- Funcionario responsavel ----");
         this.exibirFuncionario();
-        System.out.println("---- Moradores do imovél ----");
+        System.out.println(" ");
+        System.out.println("----  Morador(es) do imovel  ----");
         this.exibirMoradores();
+        System.out.println(" ");
+        System.out.println(" =============================== ");
+        System.out.println(" ");
     }
 
     @Override
     public String toString() {
-        return "Imovel{" +
+        return "br.com.zup.cadastroimobiliaria.Imovel{" +
                 "endereco='" + endereco + '\'' +
                 ", valorAluguel=" + valorAluguel +
                 ", moradores=" + moradores +

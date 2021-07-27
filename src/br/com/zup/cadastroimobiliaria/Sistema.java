@@ -1,3 +1,5 @@
+package br.com.zup.cadastroimobiliaria;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,9 +50,13 @@ public class Sistema {
 
     public static void menuOpcoes(){
 
-        IO.mostrarTexto("1 - Cadastrar dados imovel");
-        IO.mostrarTexto("2 - Exibir imoveis cadastrados");
-        IO.mostrarTexto("0- Sair do programa");
+        IO.mostrarTexto(" ");
+        IO.mostrarTexto("|--  Selecione a opcao desejada --|");
+        IO.mostrarTexto("| 1 - Cadastrar dados imovel      |");
+        IO.mostrarTexto("| 2 - Exibir imoveis cadastrados  |");
+        IO.mostrarTexto("| 0 - Sair do programa            |");
+        IO.mostrarTexto("|---------------------------------|");
+        IO.mostrarTexto(" ");
         opcoes();
     }
 
